@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+.haha {
+  color: white;
+}
+.haha::after,
+.dropdown-toggle::after {
+  display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
+}
+.semua-nav {
+  position: fixed;
+  top: 0;
+  margin-top: 86px;
+  z-index: 3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow lebih gelap dan lebih kabur */
+}
+
+main {
+  margin-top: 110px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 625px) {
+  .top-nav {
+    display: none;
+  }
+}
